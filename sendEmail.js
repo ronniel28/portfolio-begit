@@ -14,7 +14,7 @@ async function sendEmail(name, email, message) {
         from: email,
         to: 'ronniel.appleid@gmail.com',
         subject: `New message from ${name} ${email}`,
-        text: message
+        text: email + ":" +message
     };
 
     try {
